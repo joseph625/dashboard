@@ -13,8 +13,7 @@ function SignUp() {
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <input type="password" placeholder="Confirm Password" />
-            <input type="submit" value='SignUp' className='submit' />
-
+            <button onClick={()=> history.push('/')} className="submit">SignUp</button>
         </form>
         <button onClick={()=> history.push('/login')} className="login">Log in</button>
       </div>
