@@ -1,0 +1,74 @@
+.site-calendar-demo-card {
+  width: 500px;
+  border: 1px solid #f0f0f0;
+  border-radius: 2px;
+}
+
+.parents {
+  padding: 30px;
+}
+
+.parents > .parents-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.parents > .parents-header > .welcome {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c4b5fd;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.parents-header > .welcome > .left > .text {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.text > span {
+  color: #312e81;
+}
+
+.parents-header > .welcome,
+.parents-header > .site-calendar-demo-card {
+  box-shadow: 2px 3px 15px #c4b5fd;
+}
+
+.site-card-wrapper {
+  padding: 30px;
+  background: #f1f3f9;
+}
+
+.ant-card-head-title {
+  color: blueviolet;
+}
+
+.ant-card-body > span{
+    color: red;
+    font-size: 0.7rem;
+}
+
+.parents > .parents-footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.parents-footer > .courses{
+    width: 100%;
+}
+
+.meta-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meta-card > .span{
+    display: flex;
+    flex-direction: column;
+}
