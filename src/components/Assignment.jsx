@@ -111,20 +111,20 @@ function Teacher(props) {
   });
 
   const columns = [
-      {
-        title: 'ID',
-        dataIndex: 'key',
-        key: 'key',
-        width: '10%',
-        ...getColumnSearchProps('key'),
-      },
-      {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
-        width: '20%',
-        ...getColumnSearchProps('name'),
-      },
+    {
+      title: 'ID',
+      dataIndex: 'key',
+      key: 'key',
+      width: '10%',
+      ...getColumnSearchProps('key'),
+    },
+    {
+      title: 'Name',
+      dataIndex: 'name',
+      key: 'name',
+      width: '20%',
+      ...getColumnSearchProps('name'),
+    },
     {
       title: 'Image',
       dataIndex: 'img',
@@ -154,28 +154,28 @@ function Teacher(props) {
       name: 'Kare Hope',
       img: 'images/teacher2.jpg',
       grade: '11th',
-      assignment: 'assignment'
+      assignment: 'assignment',
     },
     {
       key: '2',
       name: 'Angelica Ramos',
       img: 'images/teacher8.jpg',
       grade: '11th',
-      assignment: 'assignment'
+      assignment: 'assignment',
     },
     {
       key: '3',
       name: 'Tom john',
       img: 'images/teacher6.jpg',
       grade: '11th',
-      assignment: 'assignment'
+      assignment: 'assignment',
     },
     {
       key: '4',
       name: 'Losis Ramos',
       img: 'images/teacher3.jpg',
       grade: '11th',
-      assignment: 'assignment'
+      assignment: 'assignment',
     },
   ];
 
@@ -185,7 +185,7 @@ function Teacher(props) {
         <h2>Courses</h2>
       </div>
 
-      <div className="teacher-table" >
+      <div className="teacher-table">
         <Radio.Group
           onChange={({ target: { value } }) => {
             setSelectionType(value);
@@ -196,7 +196,7 @@ function Teacher(props) {
           <Radio value="radio">radio</Radio>
         </Radio.Group>
         <Table
-          style={{ backgroundColor: '#fff', width: '80%'}}
+          style={{ backgroundColor: '#fff', width: '80%' }}
           rowSelection={{
             type: selectionType,
             ...rowSelection,

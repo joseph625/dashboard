@@ -23,7 +23,7 @@ function Sidebar() {
             <span>Students</span>
           </li>
           <li onClick={() => history.push('/parents')}>
-            <i class="fas fa-user-friends"></i>
+            <i className="fas fa-user-friends"></i>
             <span>Parents</span>
           </li>
           <li onClick={() => history.push('/assignment')}>

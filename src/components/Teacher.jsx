@@ -5,7 +5,8 @@ import { Table, Input, Button, Space, Radio } from 'antd';
 import Highlighter from 'react-highlight-words';
 import { SearchOutlined } from '@ant-design/icons';
 import 'antd/dist/antd.css';
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 function Teacher(props) {
   const [state, setState] = useState({
@@ -111,7 +112,23 @@ function Teacher(props) {
       ),
   });
 
+  
+  const dispatch = useDispatch()
+
+  const handleDelete = (key) => {
+    dispatch(props.delete(key))
+  };
+  
   const columns = [
+    {
+      title: 'ID',
+      dataIndex: 'id',
+      key: 'id',
+      width: '5%',
+      ...getColumnSearchProps('id'),
+      sorter: (a, b) => a.address.length - b.address.length,
+      sortDirections: ['descend', 'ascend'],
+    },
     {
       title: 'Name',
       dataIndex: 'name',
@@ -124,16 +141,16 @@ function Teacher(props) {
     {
       title: 'Image',
       dataIndex: 'img',
-      render: (data) => <img src={data} alt="" />,
+      render: (data) => <img src={data.files} alt="" />,
       key: 'img',
       width: '20%',
     },
     {
-      title: 'Parent Name',
-      dataIndex: 'parentName',
-      key: 'parentName',
+      title: 'Email',
+      dataIndex: 'email',
+      key: 'email',
       width: '20%',
-      ...getColumnSearchProps('parentName'),
+      ...getColumnSearchProps('email'),
     },
     {
       title: 'Address',
@@ -145,17 +162,40 @@ function Teacher(props) {
       title: 'Grade',
       dataIndex: 'grade',
       key: 'grade',
-      width: '20%',
+      width: '15%',
       ...getColumnSearchProps('grade'),
+    },
+    {
+      title: 'Action',
+      dataIndex: 'delete',
+      key: 'delete',
+      width: '5%',
+      render: (_, record) => (
+        <button
+          style={{
+            color: 'red',
+            backgroundColor: 'transparent',
+            border: 'none',
+            cursor: 'pointer'
+          }}
+          onClick={()=>handleDelete(record)}
+        >
+          Delete
+        </button>
+      ),
     },
   ];
 
-  const history = useHistory()
+  
+
+  const history = useHistory();
   return (
     <div className="teacher">
       <div className="teacher-header">
         <h2>{props.name}</h2>
-        <button onClick={()=> history.push(`/add-new-${props.name}`)}>+ {props.name}</button>
+        <button onClick={() => history.push(`/add-new-${props.name}`)}>
+          + {props.name}
+        </button>
       </div>
 
       <div className="teacher-table">

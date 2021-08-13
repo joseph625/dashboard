@@ -88,13 +88,13 @@ function Home() {
                 <img src="images/teacher7.jpg" alt="" />
                 <span>
                   Morese Sharpe
-                  <span>(Class 10th)</span>
+                  <span>(class 10th)</span>
                 </span>
               </div>
 
               <div className="middle-icon">
-                <i class="fas fa-pen"></i>
-                <i class="fas fa-times"></i>
+                <i className="fas fa-pen"></i>
+                <i className="fas fa-times"></i>
               </div>
             </li>
             <li>
@@ -102,12 +102,12 @@ function Home() {
                 <img src="images/teacher6.jpg" alt="" />
                 <span>
                   Morese Sharpe
-                  <span>(Class 10th)</span>
+                  <span>(class 10th)</span>
                 </span>
               </div>
               <div className="middle-icon">
-                <i class="fas fa-pen"></i>
-                <i class="fas fa-times"></i>
+                <i className="fas fa-pen"></i>
+                <i className="fas fa-times"></i>
               </div>
             </li>
             <li>
@@ -115,12 +115,12 @@ function Home() {
                 <img src="images/teacher5.jpg" alt="" />
                 <span>
                   Morese Sharpe
-                  <span>(Class 10th)</span>
+                  <span>(class 10th)</span>
                 </span>
               </div>
               <div className="middle-icon">
-                <i class="fas fa-pen"></i>
-                <i class="fas fa-times"></i>
+                <i className="fas fa-pen"></i>
+                <i className="fas fa-times"></i>
               </div>
             </li>
             <li>
@@ -128,12 +128,12 @@ function Home() {
                 <img src="images/teacher8.jpg" alt="" />
                 <span>
                   Morese Sharpe
-                  <span>(Class 10th)</span>
+                  <span>(class 10th)</span>
                 </span>
               </div>
               <div className="middle-icon">
-                <i class="fas fa-pen"></i>
-                <i class="fas fa-times"></i>
+                <i className="fas fa-pen"></i>
+                <i className="fas fa-times"></i>
               </div>
             </li>
           </ul>
@@ -157,8 +157,8 @@ function Home() {
             <h3 className="bottom-date">6 Augest 2021</h3>
             <h3 className="bottom-status">Checkin</h3>
             <div>
-              <i class="fas fa-pen"></i>
-              <i class="fas fa-times"></i>
+              <i className="fas fa-pen"></i>
+              <i className="fas fa-times"></i>
             </div>
           </li>
           <li>
@@ -172,8 +172,8 @@ function Home() {
               Pending
             </h3>
             <div>
-              <i class="fas fa-pen"></i>
-              <i class="fas fa-times"></i>
+              <i className="fas fa-pen"></i>
+              <i className="fas fa-times"></i>
             </div>
           </li>
           <li>
@@ -187,8 +187,8 @@ function Home() {
               Cancled
             </h3>
             <div>
-              <i class="fas fa-pen"></i>
-              <i class="fas fa-times"></i>
+              <i className="fas fa-pen"></i>
+              <i className="fas fa-times"></i>
             </div>
           </li>
         </ul>

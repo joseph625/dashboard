@@ -7,14 +7,24 @@ import Teacher from './components/Teacher';
 import Parents from './components/Parents';
 import Assignment from './components/Assignment';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import dataTeacher from './components/data/dataTeacher';
-import dataStudent from './components/data/dataStudent';
 import Messages from './components/Messages';
 import New from './components/New';
 import SignUp from './components/SignUp';
 import LogIn from './components/LogIn';
 import Recovery from './components/Recovery';
+import {
+  addTeacher,
+  deleteTeacher,
+  addStudent,
+  deleteStudent,
+  teacher,
+  student,
+} from './components/redux/features/newSlice';
+import { useSelector } from 'react-redux';
+
 function App() {
+  const stud = useSelector(student);
+  const teach = useSelector(teacher);
   return (
     <div className="app">
       <Router>
@@ -25,16 +35,16 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route path="/teacher">
-              <Teacher name="Teacher" data={dataTeacher} />
+              <Teacher name="Teacher" data={teach} delete={deleteTeacher} />
             </Route>
             <Route path="/add-new-Teacher">
-              <New name="Teacher" />
+              <New name="Teacher" add={addTeacher} length={teach.length} />
             </Route>
             <Route path="/student">
-              <Teacher name="Student" data={dataStudent} />
+              <Teacher name="Student" data={stud} delete={deleteStudent} />
             </Route>
             <Route path="/add-new-Student">
-              <New name="Student" />
+              <New name="Student" add={addStudent} length={stud.length} />
             </Route>
             <Route path="/parents" component={Parents}></Route>
             <Route path="/assignment" component={Assignment}></Route>

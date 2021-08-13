@@ -115,7 +115,7 @@ function Parents() {
               <ArrowRightOutlined />
             </div>
           </Card>
-              <br />
+          <br />
           <Card bordered={false} style={{ width: '500px' }}>
             <div className="meta-card">
               <img
@@ -130,7 +130,7 @@ function Parents() {
               <ArrowRightOutlined />
             </div>
           </Card>
-              <br />
+          <br />
           <Card bordered={false} style={{ width: '500px' }}>
             <div className="meta-card">
               <img

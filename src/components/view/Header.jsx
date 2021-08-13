@@ -6,7 +6,7 @@ function Header() {
     <>
       <div className="header">
         <div className="header-search">
-          <i class="fas fa-search" style={{ cursor: 'pointer' }}></i>
+          <i className="fas fa-search" style={{ cursor: 'pointer' }}></i>
           <input type="text" placeholder="Search here.." />
         </div>
         <i className="fas fa-bell">
