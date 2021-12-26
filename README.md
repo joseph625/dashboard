@@ -1,2 +1,2 @@
-# Getting Started with Create React App with Antd
+# This Project created with React - Antd - Redux
 This project clone dashboard for course management [Preview](https://dashboard-ant.netlify.app/)
