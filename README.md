@@ -1,2 +1,2 @@
-# This Project created with React - Antd - Redux
+# This Project was created with React - Antd - Redux
 This project clone dashboard for course management [Preview](https://dashboard-ant.netlify.app/)
